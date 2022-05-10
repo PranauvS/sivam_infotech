@@ -22,12 +22,16 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { ServicesComponent } from './services/services.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    ServicesComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
