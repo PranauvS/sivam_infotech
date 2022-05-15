@@ -24,7 +24,6 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
-import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -33,7 +32,6 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     ServicesComponent,
     AboutComponent,
-    RegisterComponent,
   ],
   imports: [
     BrowserModule,
