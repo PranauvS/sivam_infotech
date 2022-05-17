@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModule } from '@angular/core';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 
@@ -10,9 +11,13 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  constructor(config: NgbCarouselConfig) {  
+    config.interval = 2000;  
+    config.wrap = true;  
+    config.keyboard = false;  
+    config.pauseOnHover = false;  
+  }  
+  ngOnInit() {  
+  }  
 
 }
